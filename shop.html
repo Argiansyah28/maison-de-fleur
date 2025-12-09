@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Maison de fleur</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Maison de fleur</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Produk Kami</h1>
+        </div>
+
+        <div class="shop-page container">
+            <aside class="filters">
+                <h3>Filter Produk</h3>
+                <div class="filter-group">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="#">Semua</a></li>
+                        <li><a href="#">Buket Bunga</a></li>
+                        <li><a href="#">Bunga Meja</a></li>
+                        <li><a href="#">Bundle Set</a></li>
+                        <li><a href="#">Workshop</a></li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h4>Harga</h4>
+                    <input type="range" min="50000" max="1000000" value="1000000" class="price-slider" id="price-slider">
+                    <span id="price-value">Rp 50.000 - Rp 1.000.000</span>
+                </div>
+                 <div class="filter-group">
+                    <h4>Warna Dominan</h4>
+                     <ul>
+                        <li><a href="#">Merah</a></li>
+                        <li><a href="#">Putih</a></li>
+                        <li><a href="#">Pink</a></li>
+                        <li><a href="#">Biru</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="product-grid" id="product-grid">
+                
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="images/mawar.jpeg" alt="Buket Mawar Maroon & Anggrek">
+                    </a>
+                    <div class="product-info">
+                        <h3>Buket Mawar & Anggrek</h3>
+                        <p class="price">Rp 450.000</p>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="images/lily.jpeg" alt="Rangkaian Meja Lily Putih">
+                    </a>
+                    <div class="product-info">
+                        <h3>Rangkaian Meja Lily Putih</h3>
+                        <p class="price">Rp 450.000</p>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="images/pink.jpeg" alt="Pastel Pink Bundle">
+                    </a>
+                    <div class="product-info">
+                        <h3>Pastel Pink Bundle</h3>
+                        <p class="price">Rp 550.000</p>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="images/workshop.jpeg" alt="Workshop Merangkai Bunga">
+                    </a>
+                    <div class="product-info">
+                        <h3>Workshop Merangkai Bunga</h3>
+                        <p class="price">Rp 400.000</p>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="images/biru.jpeg" alt="Royal Blue Bouquet">
+                    </a>
+                    <div class="product-info">
+                        <h3>Royal Blue Bouquet</h3>
+                        <p class="price">Rp 375.000</p>
+                        <button class="btn-add-to-cart">
+                           <i class="fas fa-shopping-cart"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="images/anggrek.jpeg" alt="Elegant White Orchid">
+                    </a>
+                    <div class="product-info">
+                        <h3>Elegant White Orchid</h3>
+                        <p class="price">Rp 650.000</p>
+                        <button class="btn-add-to-cart">
+                           <i class="fas fa-shopping-cart"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    
+    <div class="floating-cart" id="floating-cart">
+        <div class="cart-info" id="view-cart-button">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-item-count">Keranjang Belanja</span>
+        </div>
+        <a href="checkout.html" class="btn-checkout">Checkout</a>
+    </div>
+
+    <div id="cart-modal-overlay" class="cart-modal-overlay"></div>
+    <div id="cart-modal" class="cart-modal">
+        <div class="modal-header">
+            <h2>Keranjang Anda</h2>
+            <button id="close-modal-button" class="close-modal-button">&times;</button>
+        </div>
+        <div id="cart-items-container" class="modal-body">
+            </div>
+        <div class="modal-footer">
+            <div class="total-price">
+                <strong>Total:</strong> <span id="cart-total-price">Rp 0</span>
+            </div>
+            <a href="checkout.html" class="btn-primary">Lanjut ke Pembayaran</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Maison de fleur</h3>
+                <p>Workshop & Toko Bunga Kreatif</p>
+            </div>
+            <div class="footer-col">
+                <h3>Jelajahi</h3>
+                <ul>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="shop.html">Produk</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Ikuti Kami</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Maison de fleur. Didesain dengan Penuh Cinta.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
